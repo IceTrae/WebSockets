@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     
-    let socketConnection = WebSocketConnector(withSocketURL: URL(string: "wss://demos.kaazing.com/echo")!)
+    let socketConnection = WebSocketConnector(withSocketURL: URL(string: "ws://echo.websocket.org")!)
+    let client = Client(url: URL(string: "ws://echo.websocket.org")!)
+    private var cancellables: Set<AnyCancellable> = []
     
     @IBOutlet var textField: UITextField!
     
@@ -24,37 +27,54 @@ class ViewController: UIViewController {
         setupConnection()
     }
 
-    private func setupConnection(){
-        socketConnection.establishConnection()
+    private func setupConnection() {
         
-        socketConnection.didReceiveMessage = {[weak self] message in
-            DispatchQueue.main.async {[weak self] in 
-                self?.messageLabel.text = message
-            }
-        }
-        
-        socketConnection.didReceiveError = { error in
-            //Handle error here
-        }
-        
-        socketConnection.didOpenConnection = { 
-            //Connection opened
-        }
-        
-        socketConnection.didCloseConnection = {
-            // Connection closed
-        }
-        
-        socketConnection.didReceiveData = { data in
-            // Get your data here
-        }
+        client.connect()
+        client
+            .subscribe(path: "", for: String.self)
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let encounteredError):
+                    print(encounteredError)
+                }
+            }, receiveValue: { [weak self] transaction in
+                self?.messageLabel.text = transaction
+            })
+            .store(in: &cancellables)
+//        socketConnection.establishConnection()
+//
+//        socketConnection.didReceiveMessage = {[weak self] message in
+//            DispatchQueue.main.async {[weak self] in
+//                self?.messageLabel.text = message
+//            }
+//        }
+//
+//        socketConnection.didReceiveError = { error in
+//            //Handle error here
+//        }
+//
+//        socketConnection.didOpenConnection = {
+//            //Connection opened
+//        }
+//
+//        socketConnection.didCloseConnection = {
+//            // Connection closed
+//        }
+//
+//        socketConnection.didReceiveData = { data in
+//            // Get your data here
+//        }
     }
     
     
     
     @IBAction func sendMessageAction(_ sender: UIButton) {
         if let message = textField.text {
-            socketConnection.send(message: message)
+            //socketConnection.send(message: message)
+            client.send(message: message)
         }
     }
     

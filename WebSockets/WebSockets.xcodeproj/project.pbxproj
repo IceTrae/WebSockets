@@ -15,6 +15,12 @@
 		6FCF2B74231A897A0018339B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FCF2B72231A897A0018339B /* LaunchScreen.storyboard */; };
 		6FCF2B7E231A8BEF0018339B /* WebSocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF2B7C231A8BEF0018339B /* WebSocketProtocol.swift */; };
 		6FCF2B7F231A8BEF0018339B /* WebSocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF2B7D231A8BEF0018339B /* WebSocketConnector.swift */; };
+		C13B800E26B2242A00B22E6C /* Never.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B800826B2242A00B22E6C /* Never.swift */; };
+		C13B800F26B2242A00B22E6C /* NesID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B800926B2242A00B22E6C /* NesID.swift */; };
+		C13B801026B2242A00B22E6C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B800A26B2242A00B22E6C /* HTTPMethod.swift */; };
+		C13B801126B2242A00B22E6C /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B800B26B2242A00B22E6C /* Client.swift */; };
+		C13B801226B2242A00B22E6C /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B800C26B2242A00B22E6C /* IncomingMessage.swift */; };
+		C13B801326B2242A00B22E6C /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B800D26B2242A00B22E6C /* OutgoingMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		6FCF2B75231A897A0018339B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FCF2B7C231A8BEF0018339B /* WebSocketProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketProtocol.swift; sourceTree = "<group>"; };
 		6FCF2B7D231A8BEF0018339B /* WebSocketConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketConnector.swift; sourceTree = "<group>"; };
+		C13B800826B2242A00B22E6C /* Never.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Never.swift; sourceTree = "<group>"; };
+		C13B800926B2242A00B22E6C /* NesID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NesID.swift; sourceTree = "<group>"; };
+		C13B800A26B2242A00B22E6C /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C13B800B26B2242A00B22E6C /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		C13B800C26B2242A00B22E6C /* IncomingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		C13B800D26B2242A00B22E6C /* OutgoingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 		6FCF2B66231A896E0018339B /* WebSockets */ = {
 			isa = PBXGroup;
 			children = (
+				C13B800626B2242A00B22E6C /* Sources */,
 				6FCF2B7B231A8BD70018339B /* Sockets */,
 				6FCF2B67231A896E0018339B /* AppDelegate.swift */,
 				6FCF2B69231A896E0018339B /* SceneDelegate.swift */,
@@ -79,6 +92,27 @@
 				6FCF2B7C231A8BEF0018339B /* WebSocketProtocol.swift */,
 			);
 			path = Sockets;
+			sourceTree = "<group>";
+		};
+		C13B800626B2242A00B22E6C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C13B800726B2242A00B22E6C /* Nes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C13B800726B2242A00B22E6C /* Nes */ = {
+			isa = PBXGroup;
+			children = (
+				C13B800826B2242A00B22E6C /* Never.swift */,
+				C13B800926B2242A00B22E6C /* NesID.swift */,
+				C13B800A26B2242A00B22E6C /* HTTPMethod.swift */,
+				C13B800B26B2242A00B22E6C /* Client.swift */,
+				C13B800C26B2242A00B22E6C /* IncomingMessage.swift */,
+				C13B800D26B2242A00B22E6C /* OutgoingMessage.swift */,
+			);
+			path = Nes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +187,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FCF2B6C231A896E0018339B /* ViewController.swift in Sources */,
+				C13B801226B2242A00B22E6C /* IncomingMessage.swift in Sources */,
 				6FCF2B68231A896E0018339B /* AppDelegate.swift in Sources */,
 				6FCF2B6A231A896E0018339B /* SceneDelegate.swift in Sources */,
+				C13B801326B2242A00B22E6C /* OutgoingMessage.swift in Sources */,
+				C13B800F26B2242A00B22E6C /* NesID.swift in Sources */,
+				C13B801026B2242A00B22E6C /* HTTPMethod.swift in Sources */,
 				6FCF2B7E231A8BEF0018339B /* WebSocketProtocol.swift in Sources */,
+				C13B800E26B2242A00B22E6C /* Never.swift in Sources */,
 				6FCF2B7F231A8BEF0018339B /* WebSocketConnector.swift in Sources */,
+				C13B801126B2242A00B22E6C /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +341,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY7562Z9M4;
 				INFOPLIST_FILE = WebSockets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.WebSockets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icetrae.WebSockets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,12 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY7562Z9M4;
 				INFOPLIST_FILE = WebSockets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rizwan.WebSockets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icetrae.WebSockets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

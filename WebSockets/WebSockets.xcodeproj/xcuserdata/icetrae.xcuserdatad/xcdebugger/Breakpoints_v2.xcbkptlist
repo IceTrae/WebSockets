@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1EB1E777-B791-4624-A68E-32BAE485644E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41E36D0E-82E2-4515-B80F-4D60060A25E3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WebSockets/Sources/Nes/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "receive(result:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F7A7149-8F4F-4AE2-9885-485C4205161E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WebSockets/Sources/Nes/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "receive(result:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC28357E-5271-4448-A5F3-B794FD72B27E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WebSockets/Sources/Nes/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "send(message:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC28357E-5271-4448-A5F3-B794FD72B27E - 7b6922288a65e510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebSockets.Client.send(message: Swift.String) -&gt; ()"
+                  moduleName = "WebSockets"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/icetrae/Code/Xcode_repo/SwiftWebSockets/WebSockets/WebSockets/Sources/Nes/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "CC28357E-5271-4448-A5F3-B794FD72B27E - 7b6922288a65e510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebSockets.Client.send(message: Swift.String) -&gt; ()"
+                  moduleName = "WebSockets"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/icetrae/Code/Xcode_repo/SwiftWebSockets/WebSockets/WebSockets/Sources/Nes/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "CC28357E-5271-4448-A5F3-B794FD72B27E - 99eb97086932646e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WebSockets.Client.send(message: Swift.String) -&gt; ()"
+                  moduleName = "WebSockets"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/icetrae/Code/Xcode_repo/SwiftWebSockets/WebSockets/WebSockets/Sources/Nes/Client.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
